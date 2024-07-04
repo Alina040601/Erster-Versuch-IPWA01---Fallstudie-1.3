@@ -10,6 +10,9 @@
                 margin-right: auto;
                 margin-top: 3em;
             }
+            
+            header picture { float: left;}
+
             nav li, form {
                 display:inline;
             }
@@ -20,23 +23,48 @@
                 padding:0%;
                 text-align:left;
             }
+            input {
+                height: 2em;
+                padding: 0.5em;
+                border: 1px solid rgb(0, 0, 0);
+                border-radius: 0.5em;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+            margin: 0.5em;
+            }
+            a:hover {
+                color: rgb(175, 38, 38);
+            }
 
             p { color: rgb(128, 0, 0); }
             h1 {
             background-color: rgb(128, 0, 0);
             padding: 1em;
-            border: 5px solid rgb(235, 235, 235, 0.48);
+            border: 5px solid rgb(200, 38, 38);
             }
             h1 { color: rgb(255, 255, 255); }
             h2 { color: rgb(128, 0, 0);}
             table { font-size: 150%; }
+
+            table {
+                width: 100%;
+                margin: 0.5em;
+            }
+            thead td, thead th {
+                border-width: 2px;
+                font-weight: normal;
+            }
+            td, th {
+                text-align: left;
+                border-bottom: 1px solid rgb(0, 0, 0);
+                padding: 0.5em;
+            }
             </style>
         <title>Kleiderspenden Bonn - Menschen helfen Menschen</title>
 <header> 
     <picture>LOGO</picture>
-    <style type="text/css"> 
-    header picture { float: left;}
-    </style>
     <nav>
         <ul>
             <li>
@@ -57,9 +85,9 @@ href="https://www.facebook.com/WebAppStartup">Facebook</a></li>
     <nav>
         <ul>
             <li><a href="home.html">Homepage</a></li>
-            <li><a href="services.html">Unsere Mission</a></li>
-            <li><a href="products.html">Kleiderspenden</a></li>
-            <li><a href="prices.html">Krisengebiete</a></li>
+            <li><a href="unseremission.html">Unsere Mission</a></li>
+            <li><a href="kleiderspende.html">Kleider spenden</a></li>
+            <li><a href="krisengebiete.html">Krisengebiete</a></li>
             <li><a href="about.html">Über uns</a></li>
         </ul>
     </nav>
@@ -107,14 +135,4 @@ href="https://www.facebook.com/WebAppStartup">Facebook</a></li>
     </nav>
 </footer>
 </html>
-<style type="text/css">
-    header { background-color: rgba(235, 235, 235, 0.48); }
-    header nav ul { text-align: right; }
-    header nav ul li { display: inline; }
-    main { display: flex; }
-    main nav { width:100%; background-color: rgba(235, 235, 235, 0.48); }
-    main div#content { width:100%; background-color: #aff; }
-    footer { background-color: rgb(181, 122, 122); }
-    footer nav ul { text-align: center; }
-    footer nav ul li { display: inline; }
-</style>
+
