@@ -5,13 +5,18 @@
 
             body {
                 font-family: system-ui;
-                width: 80%;
+                width: 90%;
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 3em;
             }
-            
-            header picture { float: left;}
+            header {
+                background-color: silver;
+            }
+            header picture { 
+                float: left;
+                margin: 0.5em; 
+            }
 
             nav li, form {
                 display:inline;
@@ -19,9 +24,34 @@
             header, footer nav ul {
                 text-align:right;
             }
+            main {
+                display: flex;
+            }
+            main nav {
+                width: 20%;
+                background-color: silver;
+            }
+            main nav li {
+                display:block;
+            }
+            main nav li a {
+                line-height: 1.5em;
+            }
+            
             main nav ul {
                 padding:0%;
-                text-align:left;
+            }
+            main div#content {
+                width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 5%;
+            }
+            section {
+                border: 1px solid rgb(0, 0, 0);
+                border-radius: 0.5em;
+                margin: 1em;
+                padding: 1em;
             }
             input {
                 height: 2em;
@@ -32,7 +62,7 @@
             a {
                 text-decoration: none;
                 color: rgb(0, 0, 0);
-            margin: 0.5em;
+                margin: 0.5em;
             }
             a:hover {
                 color: rgb(175, 38, 38);
@@ -43,8 +73,10 @@
             background-color: rgb(128, 0, 0);
             padding: 1em;
             border: 5px solid rgb(200, 38, 38);
-            }
-            h1 { color: rgb(255, 255, 255); }
+            text-align: center;
+            font-size: 200%;
+            color: rgb(255, 255, 255); }
+
             h2 { color: rgb(128, 0, 0);}
             table { font-size: 150%; }
 
@@ -61,71 +93,81 @@
                 border-bottom: 1px solid rgb(0, 0, 0);
                 padding: 0.5em;
             }
+            @media screen and (max-width: 600px) {
+                header nav li, form { display: block;}
+            }
             </style>
         <title>Kleiderspenden Bonn - Menschen helfen Menschen</title>
-<header> 
-    <picture>LOGO</picture>
-    <nav>
-        <ul>
-            <li>
-                <form>
-                    <input type="text" name="suche" placeholder="Suche">
-                </form>
-            </li>
-            <li><a
-href="https://www.instagram.com/WebAppStartup">Instagram</a></li>
-            <li><a
-href="https://www.facebook.com/WebAppStartup">Facebook</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
-</header>
-</head>
+        <header> 
+            <picture>LOGO</picture>
+            <nav>
+                <ul>
+                    <li>
+                        <form>
+                            <input type="text" name="suche" placeholder="Suche">
+                        </form>
+                    </li>
+                    <li><a
+                        href="https://www.instagram.com/WebAppStartup">Instagram</a></li>
+                        <li><a
+                            href="https://www.facebook.com/WebAppStartup">Facebook</a></li>
+                            <li><a href="contact.html">Kontakt</a></li>
+                        </ul>
+            </nav>
+        </header>
+    </head>
 <main>
     <nav>
         <ul>
-            <li><a href="home.html">Homepage</a></li>
-            <li><a href="unseremission.html">Unsere Mission</a></li>
-            <li><a href="kleiderspende.html">Kleider spenden</a></li>
-            <li><a href="krisengebiete.html">Krisengebiete</a></li>
-            <li><a href="about.html">Über uns</a></li>
+            <li>
+                <a href="home.html">Homepage</a></li>
+            <li>
+                <a href="mission.html">Unsere Mission</a></li>
+            <li>
+                <a href="donation.html">Kleider spenden</a></li>
+            <li>
+                <a href="countries.html">Krisengebiete</a></li>
+            <li>
+                <a href="about.html">Über uns</a></li>
         </ul>
     </nav>
+<div id="content">
+    <body>
+        <section>
+            <h1>Kleiderspenden Bonn</h1>
+            <p>Wir sammeln Kleiderspenden und verteilen diese an die von Ihnen persönlich gewählten Krisengebiete!
+            </p>
+        </section>
+        <section>
+            <h2>Unsere Mission: "Menschen helfen Menschen!"</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Leistung</th>
+                        <th>Einzelpreis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Stundensatz Beratung</td>
+                        <td>&euro; 100,--</td>
+                    </tr>
+                    <tr>
+                        <td>Tagessatz Beratung</td>
+                        <td>&euro; 600,--</td>
+                    </tr>
+                    <tr>
+                        <td>Homepage Baukasten pro Monat</td>
+                        <td>&euro; 1.000,--</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <h3>Wie Sie helfen können</h3>
+        <h4>Jetzt Kleiderspende anmelden!</h4>
+    </body>
+</div>
 </main>
-<body>
-    <section>
-        <h1>Kleiderspenden Bonn</h1>
-        <p>Wir sammeln Kleiderspenden und verteilen diese an die von Ihnen persönlich gewählten Krisengebiete!
-        </p>
-    </section>
-    <section>
-        <h2>Unsere Mission: "Menschen helfen Menschen!"</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Leistung</th>
-                    <th>Einzelpreis</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Stundensatz Beratung</td>
-                    <td>&euro; 100,--</td>
-                </tr>
-                <tr>
-                    <td>Tagessatz Beratung</td>
-                    <td>&euro; 600,--</td>
-                </tr>
-                <tr>
-                    <td>Homepage Baukasten pro Monat</td>
-                    <td>&euro; 1.000,--</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-<h3>Wie Sie helfen können</h3>
-<h4>Jetzt Kleiderspende anmelden!</h4>    
-</body>
 <footer>
     <nav>
         <ul>
