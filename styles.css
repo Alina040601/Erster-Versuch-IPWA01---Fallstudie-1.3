@@ -11,7 +11,8 @@ header {
 }
 header img { 
     float: left;
-     margin: 0.5em; 
+    margin: 0.5em;
+
 }
 nav li, form {
     display:inline;
@@ -61,7 +62,7 @@ a {
 a:hover {
     color: rgb(175, 38, 38);
 }
-p { color: rgb(128, 0, 0); }
+p { color: black; }
 h1 {
     background-color: rgb(128, 0, 0);
     padding: 1em;
@@ -86,4 +87,14 @@ td, th {
 }
 @media screen and (max-width: 600px) {
 header nav li, form { display: block;}
-}                    
+} 
+button {
+    background-color: silver;
+    transition: .3s ease all;
+}
+
+button:hover {
+    background-color: rgb(142, 142, 142);
+    transition: .3 ease all;
+    transform: translateY(-3px);
+}                   

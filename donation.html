@@ -1,35 +1,89 @@
 <!DOCTYPE html>
 <html lang="de">
-    <form action="submit.html">
-        <p>Text</p>
-        <input type="text">
-        <p>Email</p>
-        <input type="email">
-        <p>Telefon/Mobilnummer</p>
-        <input type="tel">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Kleiderspenden Bonn - Menschen helfen Menschen</title>
+        <header> 
+            <img src="logo.png" 
+            alt="Logo Kleiderspende Bonn"
+            width="200">
+            <nav>
+                <ul>
+                    <li>
+                        <form>
+                            <input type="text" name="suche" placeholder="Suche">
+                        </form>
+                    </li>
+                    <li><a
+                        href="https://www.instagram.com/KleiderspendeBonn">Instagram
+                    </a></li>
+                    <li><a
+                        href="https://www.facebook.com/KleiderspendeBonn">Facebook
+                    </a></li>
+                    <li><a href="contact.html">Kontakt
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+    </head>
+<main>
+    <nav>
+        <ul>
+            <li>
+                <a href="home.html">Homepage</a></li>
+            <li>
+                <a href="mission.html">Unsere Mission</a></li>
+            <li>
+                <a href="donation.html">Kleidung spenden</a></li>
+            <li>
+                <a href="countries.html">Krisengebiete</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <body>
+            <section>
+                <h1>Kleiderspende anmelden</h1>
+                <form action="submit.html">
+                    <p>Text</p>
+                    <input type="text">
+                    <p>Email</p>
+                    <input type="email">
+                    <p>Telefon/Mobilnummer</p>
+                    <input type="tel">
 
-        <p>Checkbox</p>
-        <label for="cb1">First</label>
-        <input type="checkbox" id="cb1" name="cb1">
-        <label for="cb2">Second</label>
-        <input type="checkbox" id="cb2" name="cb2">
-        <label for="cb3">Third</label>
-        <input type="checkbox" id="cb3" name="cb3">
+                    <p>Checkbox</p>
+                    <label for="cb1">First</label>
+                    <input type="checkbox" id="cb1" name="cb1">
+                    <label for="cb2">Second</label>
+                    <input type="checkbox" id="cb2" name="cb2">
+                    <label for="cb3">Third</label>
+                    <input type="checkbox" id="cb3" name="cb3">
 
-        <p>Radio</p>
-        <input type="radio">
-        <input type="radio">
-        <input type="radio">
+                    <p>Radio</p>
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
 
-        <p>Select</p>
-        <select name="" id="">
-            <option>One</option>
-            <option>Two</option>
-            <option>Three</option>
+                    <p>Select</p>
+                    <select name="" id="">
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>Three</option>
 
-        </select>
+                    </select>
 
-        <button type="submit">Submit</button>
-andere optionen für input: Disabled, Autofocus, Required
-    </form>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </body>
+    </div>
+</main>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="privacy.html">Datenschutz</a></li>
+            <li><a href="imprint.html">Impressum</a></li>
+        </ul>
+    </nav>
+</footer>
 </html>
