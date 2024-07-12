@@ -7,31 +7,31 @@ body {
     margin-top: 3em;
 }
 header {
-    background-color: silver;
+    background-color: rgb(60, 60, 60);
 }
 header img { 
-    float: left;
-    margin: 0.5em;
-
+    width: 10%;
+    height: 10%;
 }
 nav li, form {
     display:inline;
 }
 header, footer nav ul {
-    text-align:right;
+    text-align: right;
 }            
 main {
     display: flex;
 }
 main nav {
     width: 20%;
-    background-color: silver;
-}
-main nav li {
-    display:block;
-}
+    background-color: rgb(60, 60, 60);
+    padding: 0%;
+    margin: 0%;
+}    
 main nav li a {
-    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    display:block;
 }            
 main nav ul {
     padding:0%;
@@ -56,7 +56,7 @@ input {
 }
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin: 0.5em;
 }
 a:hover {
