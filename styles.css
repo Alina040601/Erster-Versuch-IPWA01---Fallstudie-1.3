@@ -1,41 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
+
+.ubuntu regular {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ubuntu regular-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+li, a, button {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+* {    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    font-family: system-ui;
-    width: 90%;  
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
+    width: 100%;  
+    margin: 0%;
 }
+
 header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0% 5%;
     background-color: rgb(60, 60, 60);
 }
-header img { 
+header img {
     width: 10%;
-    height: 10%;
+    cursor: pointer;
+}
+.logo {
+    width: 10%;
+    cursor: pointer;
+    margin-right: auto;
+}
+input {
+    width: 40%;
+    height: 1em;
+    padding: 1em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.5em;
 }
 nav li, form {
-    display:inline;
+    display: inline-block;
 }
-header, footer nav ul {
+
+footer nav ul {
     text-align: right;
-}            
-main {
-    display: flex;
-}
+}    
+
 main nav {
-    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     background-color: rgb(60, 60, 60);
-    padding: 0%;
-    margin: 0%;
 }    
 main nav li a {
     color: rgb(255, 255, 255);
-    padding: 15px;
-    display:block;
-}            
-main nav ul {
-    padding:0%;
+    transition: all 0.3s ease 0s;
 }
+main nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}  
+main nav ul {
+    padding: 5px;
+}
+
 main div#content {
     width: 80%;
     display: flex;
@@ -48,19 +87,16 @@ section {
     margin: 1em;
     padding: 1em;
 }
-input {
-    height: 2em;
-    padding: 0.5em;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 0.5em;
-}
+
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin: 0.5em;
 }
 a:hover {
-    color: rgb(175, 38, 38);
+    background-color: rgb(50, 50, 50);
+    border: none;
+    border-radius: 0.5em;
 }
 p { color: black; }
 h1 {
@@ -89,12 +125,15 @@ td, th {
 header nav li, form { display: block;}
 } 
 button {
-    background-color: silver;
+    color: white;
+    background-color: rgba(60, 60, 60,1);
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
     transition: .3s ease all;
-}
-
+    cursor: pointer;
+} 
 button:hover {
-    background-color: rgb(142, 142, 142);
-    transition: .3 ease all;
-    transform: translateY(-3px);
-}                   
+    background-color: rgba(60, 60, 60,0.8);
+    transform: translateY(-1.5px);
+}
