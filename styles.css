@@ -28,26 +28,32 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 10px 10px 10px;
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(255, 255, 255);
+}
+header a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        margin: 0.5em;
+        transition: all 0.3s ease 0s;
 }
 .logo {
     width: 15%;
     cursor: pointer;
-    margin-right: auto;
 }
 .search {
+    display: flex;
+    align-items: center;
     background-color: white;
+    border: 1px solid black;
     border-radius: 25px;
-    position: relative;
+    width: 100%;
+    max-width: 700px;
 }
 input {
-    width: 100%;
-    height: 100%;
-    display: block;
-    padding: 8px 40px 8px 20px;
+    padding: 10px;
     border: none;
     border-radius: 25px;
     font-size: 20px;
@@ -57,22 +63,21 @@ input:focus {
     outline: none;
 }
 .sb{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
+    width: 40px;
     height: 100%;
-    border-radius: 50%;
-    cursor: pointer;
     border: none;
-    background-color: none;
-    font-size: 18px;
+    cursor: pointer;
+    background: transparent;
+    font-size: 16px;
 }
 .sb i{
-    color: black;
+    color: none;
 }
 .sb i:hover{
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.6);
+}
+.instagram, .facebook {
+    color: rgb(0, 0, 0);
 }
 
 nav li, form {
@@ -92,8 +97,13 @@ main nav {
 }
 
 main nav li a {
-  padding: 1em;
+    padding: 1em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0.5em;
+    transition: all 0.3s ease 0s;
 }
+
 main nav li a:hover {
     background-color: rgb(118, 0, 0);
 }
@@ -108,13 +118,6 @@ section {
     border-radius: 0.5em;
     margin: 1em;
     padding: 1em;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 0.5em;
-    transition: all 0.3s ease 0s;
 }
 
 p { color: black; }
