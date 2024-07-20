@@ -46,74 +46,81 @@
         <body>
             <section>
                 <h1>Kleiderspende anmelden</h1>
-                <p>Über das folgende Formular können Sie ganz einfach Ihre Kleiderspende anmelden. 
-                <p>Bitte füllen Sie das Formular vollständig aus und wählen Sie die gewünschten Kleidungsstücke aus, die Sie spenden möchten.</p>
-                <p>Bitte beachten Sie, dass der Abholservice durch unsere Sammelfahrzeuge nur im näheren Umkreis einer Geschäftsstelle möglich ist.</p>
-                <p>Unterwäsche kann aufgrund von Hygienevorschriften nicht gespendet werden.</p>
-                <p>Vielen Dank für Ihre Unterstützung!</p> 
+                <p>Über das folgende Formular können Sie ganz einfach Ihre Kleiderspende anmelden. Bitte füllen Sie das Formular vollständig aus und wählen Sie die gewünschten Kleidungsstücke aus, die Sie spenden möchten. Bitte beachten Sie, dass der Abholservice durch unsere Sammelfahrzeuge nur im näheren Umkreis einer Geschäftsstelle möglich ist. Unterwäsche kann aufgrund von Hygienevorschriften nicht gespendet werden.<br>
+                Vielen Dank für Ihre Unterstützung!</p>
+            </section>
+            <section class="Formular">
                 <form class=Spende action="submit.html">
-                    
-                    <p>Art der Spendenanmeldung</p>
-                    <select name="Art der Spendenanmeldung" id="AdS">
-                    <option>Übergabe an der Geschäftsstelle</option>
-                    <option>Abholung</option>
-                    </select>
-
-                    <p>Krisengebiet</p>
-                    <select name="Kriesengebiet" id="Kg">
-                    <option>Syrien</option>
-                    <option>Yemen</option>
-                    <option>Afghanistan</option>
-                    <option>Ukraine</option>
-                    <option>Somalia</option>
-                    <option>Haiti</option>
-                    <option>Südsudan</option>
-                    <option>Äthiopien</option>
-                    <option>Libanon</option>
-                    <option>Demokratische Republik Kongo (DRK)</option>
-                    </select>
-
-                    <p>Abholadresse</p>
-                    <p>Straße</p>
-                    <input type="text" name="Straße" id="str">
-                    <p>Hausnummer</p>
-                    <input type="number" name="Hausnummer" id="Hn">
-                    <p>Postleitzahl</p>
-                    <input type="number" name="Postleitzahl" id="PLZ">
-                    <p>Ort</p>
-                    <input type="text" name="Ort" id="ort">
-                    <p>Email</p>
-                    <input type="email" name="Email" id="email">
-                    <p>Telefon/Mobilnummer</p>
-                    <input type="tel" name="Telefonnummer" id="tel">
-
-                    <p>Wunschtermin</p>
-                    <input type="date">
-                    <input type="time">
-
-                    <p>Checkbox</p>
-                    <input type="checkbox" id="cb1" name="cb1">
-                    <label for="cb1">Pullover</label><br>
-                    <input type="checkbox" id="cb2" name="cb2">
-                    <label for="cb2">Top/T-Shirt</label><br>
-                    <input type="checkbox" id="cb3" name="cb3">                   
-                    <label for="cb3">Hose</label><br> 
-                    <input type="checkbox" id="cb4" name="cb4">
-                    <label for="cb3">Socken</label><br>
-                    <input type="checkbox" id="cb5" name="cb5">
-                    <label for="cb3">Accessoires (Gürtel, Kopfbedeckungen, etc.)</label><br>
-                    <input type="checkbox" id="cb6" name="cb6">
-                    <label for="cb3">Schuhe</label><br>
-                    
-                    <p>Radio</p>
-                    <label for="r1">> 5kg</label>
-                    <input type="radio" id="r1">
-                    <label for="r2">> 5kg</label>
-                    <input type="radio" id="r2">
-                    <label for="r3">> 10kg</label>
-                    <input type="radio" id="r3"><br>
-
-                    <button class=spenden type="submit">Spenden</button>
+                    <section>
+                        <p class="hh">Formular zur Anmeldung einer Kleiderspende</p>
+                        <p class="hh1">Art der Spendenanmeldung</p>
+                        <select name="Art der Spendenanmeldung" id="AdS">
+                            <option>Abholung</option>
+                            <option>Übergabe an der Geschäftsstelle</option>
+                        </select>
+                    </section>
+                    <section>
+                        <p class="hh2">Krisengebiet</p>
+                        <select name="Kriesengebiet" id="Kg">
+                            <option>Syrien</option>
+                            <option>Yemen</option>
+                            <option>Afghanistan</option>
+                            <option>Ukraine</option>
+                            <option>Somalia</option>
+                            <option>Haiti</option>
+                            <option>Südsudan</option>
+                            <option>Äthiopien</option>
+                            <option>Libanon</option>
+                            <option>Demokratische Republik Kongo (DRK)</option>
+                        </select>
+                    </section>
+                    <section>
+                        <p class="hh3">Abholadresse</p>
+                        <p>Straße</p>
+                        <input type="text" name="Straße" id="str">
+                        <p>Hausnummer</p>
+                        <input type="number" name="Hausnummer" id="Hn">
+                        <p>Postleitzahl</p>
+                        <input type="number" name="Postleitzahl" id="PLZ">
+                        <p>Ort</p>
+                        <input type="text" name="Ort" id="ort">
+                        <p>Email</p>
+                        <input type="email" name="Email" id="email">
+                        <p>Telefon/Mobilnummer</p>
+                        <input type="tel" name="Telefonnummer" id="tel">
+                    </section>
+                    <section>
+                        <p class="hh4">Wunschtermin</p>
+                        <input type="date">
+                        <input type="time">
+                    </section>
+                    <section>
+                        <p class="hh5">Art der Kleidung</p>
+                        <input type="checkbox" id="cb1" name="cb1">
+                        <label for="cb1">Pullover</label><br>
+                        <input type="checkbox" id="cb2" name="cb2">
+                        <label for="cb2">Top/T-Shirt</label><br>
+                        <input type="checkbox" id="cb3" name="cb3">                   
+                        <label for="cb3">Hose</label><br> 
+                        <input type="checkbox" id="cb4" name="cb4">
+                        <label for="cb3">Socken</label><br>
+                        <input type="checkbox" id="cb5" name="cb5">
+                        <label for="cb3">Accessoires (Gürtel, Kopfbedeckungen, etc.)</label><br>
+                        <input type="checkbox" id="cb6" name="cb6">
+                        <label for="cb3">Schuhe</label><br>
+                    </section>
+                    <section>
+                        <p class="hh6">Gesamtgewicht der Spende</p>
+                        <input type="radio" id="r1">
+                        <label for="r1">> 5kg</label><br>
+                        <input type="radio" id="r2">
+                        <label for="r2">> 5kg</label><br>
+                        <input type="radio" id="r3">
+                        <label for="r3">> 10kg</label>
+                    </section>
+                    <section class="sectionspenden">
+                        <button class=spenden type="submit">Spenden</button>
+                    </section>
                 </form>
             </section>
         </body>
