@@ -146,6 +146,9 @@ section {
 
 p { color: black; }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1em;
+}
 h1 {
     background-color: rgb(128, 0, 0);
     padding: 1em;
@@ -176,6 +179,7 @@ h2 {
 }
 .aufruf:hover {
     background-color: rgb(108, 0, 0);
+    transform: translateY(-1.5px);
 }
 table { 
     font-size: 150%;
@@ -193,8 +197,10 @@ td, th {
 }
 
 .spenden {
+    align-items: center;
     color: white;
     background-color: rgb(128, 0, 0);
+    margin: 1em;
     padding: 9px 25px;
     border: none;
     border-radius: 50px;
@@ -216,4 +222,12 @@ td, th {
     border: 1px solid black;
     border-radius: 0.25em;
     padding: 0.2em;
+}
+
+.crisis {
+    margin: 2em;
+}
+
+select option{
+    font-size: large;
 }
