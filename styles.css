@@ -10,20 +10,32 @@
     font-weight: 400;
     font-style: italic;
 }
-li, a, button {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+    header nav li, form { display: block;}
+    }
+
+li, a, button {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
 }
 
 body {
     width: 100%;  
     margin: 0%;
+    line-height: 2em;
+    font-size: large;
 }
 
 header {
@@ -34,7 +46,6 @@ header {
     background-color: rgb(255, 255, 255);
 }
 header a {
-        text-decoration: none;
         color: rgb(0, 0, 0);
         margin: 0.5em;
         transition: all 0.3s ease 0s;
@@ -96,7 +107,6 @@ footer nav ul {
     height: 150px;
 }    
 footer a {
-    text-decoration: none;
     color: rgb(255, 255, 255);
     margin: 5em;
     transition: all 0.3s ease 0s;
@@ -106,26 +116,26 @@ main nav {
     display: flex;
     justify-content: center;
     margin: auto;
-    padding: 1em;
+    padding: 0.6em;
     background-color: rgb(128, 0, 0);
 }
 
 main nav li a {
     padding: 1em;
-    text-decoration: none;
     color: rgb(255, 255, 255);
     margin: 0.5em;
     transition: all 0.3s ease 0s;
 }
 
 main nav li a:hover {
-    background-color: rgb(118, 0, 0);
+    background-color: rgb(108, 0, 0);
 }
 main div#content {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     margin-left: 5%;
+    justify-content: center;
 }
 section {
     border: 1px solid rgb(0, 0, 0);
@@ -152,6 +162,21 @@ h2 {
     font-size: 200%;
     color: rgb(255, 255, 255); 
 }
+.aufruf {
+    background-color: rgb(128, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.25em;
+    padding: 0.5em;
+    justify-content: center;
+    font-size: 150%;
+    transition: all 0.3s ease 0s;
+}
+.aufruf a {
+    color: white;
+}
+.aufruf:hover {
+    background-color: rgb(108, 0, 0);
+}
 table { 
     font-size: 150%;
     width: 100%;
@@ -166,19 +191,29 @@ td, th {
     border-bottom: 1px solid rgb(0, 0, 0);
     padding: 0.5em;
 }
-@media screen and (max-width: 600px) {
-header nav li, form { display: block;}
-} 
+
 .spenden {
     color: white;
-    background-color: rgba(60, 60, 60,1);
+    background-color: rgb(128, 0, 0);
     padding: 9px 25px;
     border: none;
     border-radius: 50px;
     transition: .3s ease all;
     cursor: pointer;
 } 
+
 .spenden:hover {
-    background-color: rgba(60, 60, 60,0.8);
+    background-color: rgb(108, 0, 0);
     transform: translateY(-1.5px);
+}
+
+.Spende {
+    margin: 0.5em;
+}
+
+.Spende input {
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    padding: 0.2em;
 }
