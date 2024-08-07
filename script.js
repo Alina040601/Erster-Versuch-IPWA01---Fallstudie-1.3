@@ -13,7 +13,7 @@ searchInput.addEventListener("input", (event) => {
   console.log(value);
 })
 
-fetch("https://jsonplaceholder.typicode.com/posts")
+fetch("data.json")
 .then(response => {
   return result.json();
 })
