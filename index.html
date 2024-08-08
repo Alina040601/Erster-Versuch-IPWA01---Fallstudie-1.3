@@ -10,9 +10,9 @@
             <nav>
                 <ul>
                     <li>
-                        <form class="search">
-                            <input type="text" name="suche" placeholder="Suche..." autocomplete=off data-search>
-                            <button class=sb type="submit"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+                        <form class="search" data-search>
+                            <input type="text" name="suche" placeholder="Suche..." autocomplete=off id=data-search>
+                            <button onclick="fetchData()" class="sb" type="submit"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
                         </form>
                     </li>
                     <li><a

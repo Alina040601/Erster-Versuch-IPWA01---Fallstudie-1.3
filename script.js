@@ -12,17 +12,13 @@ searchInput.addEventListener("input", (event) => {
   const value = event.target.value
   console.log(value);
 })
+const listEl = document.querySelector('ul');
 
-fetch("data.json")
-.then(response => {
-  return result.json();
-})
-.then(data => {
-  data.forEach(section => {
-    const markup = '<li>${section.title}</li>';
-    document.querySelector('ul').insertAdjacentHTML('beforeend', markup);
-  });
-})
-.catch(error => {
-  console.log(error)
-})
+fetch('./search.json')
+      .then(response => response.json())
+      .then(data => { 
+        data.forEach(section => {
+          listEl.insertAdjacentHTML('beforeend', `<li>${section.title}</li>`);
+        });
+      })
+        .catch(error => console.error(error));
