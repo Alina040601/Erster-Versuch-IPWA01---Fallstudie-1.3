@@ -11,8 +11,7 @@ const searchInput = document.querySelector("[data-search]");
 searchInput.addEventListener("input", (event) => {
   const value = event.target.value
   console.log(value);
-})
-const listEl = document.querySelector('ul');
+});
 
 fetch('./search.json')
       .then(response => response.json())

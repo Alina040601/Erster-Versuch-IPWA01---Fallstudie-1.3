@@ -89,6 +89,7 @@ input:focus {
 .sb i:hover{
     color: rgba(0, 0, 0, 0.6);
 }
+
 .instagram, .facebook {
     color: rgb(0, 0, 0);
 }
@@ -101,12 +102,14 @@ footer {
     background-color: rgb(128, 0, 0);
     height: 150px;
 }
+
 footer nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
-}    
+}
+
 footer a {
     color: rgb(255, 255, 255);
     margin: 5em;
@@ -131,9 +134,11 @@ main nav li a {
 main nav li a:hover {
     background-color: rgb(108, 0, 0);
 }
+
 div {
     justify-content: center;
   }
+
 .content {
     width: 100%;
     display: flex;
@@ -155,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1em;
     justify-content: center;
 }
+
 h1 {
     background-color: rgb(128, 0, 0);
     padding: 1em;
@@ -163,6 +169,7 @@ h1 {
     font-size: 200%;
     color: rgb(255, 255, 255); 
 }
+
 h2 {
     background-color: rgb(128, 0, 0);
     padding: 1em;
@@ -171,11 +178,13 @@ h2 {
     font-size: 200%;
     color: rgb(255, 255, 255); 
 }
+
 .sectionaufruf {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .aufruf {
     color: white;
     background-color: rgb(128, 0, 0);
@@ -187,32 +196,39 @@ h2 {
     cursor: pointer;
     font-size: large;
 }
+
 .aufruf a {
     color: white;
 }
+
 .aufruf:hover {
     background-color: rgb(108, 0, 0);
     transform: translateY(-1.5px);
 }
+
 table { 
     font-size: 150%;
     width: 100%;
     margin: 0.5em;
 }
+
 thead td, thead th {
     border-width: 2px;
     font-weight: normal;
 }
+
 td, th {
     text-align: left;
     border-bottom: 1px solid rgb(0, 0, 0);
     padding: 0.5em;
 }
+
 .sectionspenden {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .spenden {
     color: white;
     background-color: rgb(128, 0, 0);
